@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-
+import {HashRouter} from 'react-router-dom'
 import Navigation from './components/navbar/Navigation'
 import Header from './components/Header/Header'
 import Programs from './components/Programs/Programs'
@@ -21,6 +21,7 @@ const App = () => {
 
   return (
    <>
+   <HashRouter>
      <Navigation/>
    <Header/>
    <div className="container">
@@ -40,7 +41,7 @@ const App = () => {
    
    <Videoplayer playState={playState}  setplayState={setplayState}/>
    
-   
+   </HashRouter>
    </>
   )
 }
